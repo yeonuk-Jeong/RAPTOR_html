@@ -1,0 +1,40 @@
+
+  .workflow_btn {
+    width: 270px;
+    height: 60px;
+    border: 1px solid #4e64c0;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #ffffff;
+    outline: 0;
+
+  }
+
+  .workflow_btn:hover, 
+  .workflow_btn:focus{
+    width: 270px;
+    height: 60px;
+    border: 1px solid #4e64c0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #6381f8;
+  }
+
+
+  .workflow_btn_scroll {
+    width: 270px;
+    height: 60px;
+    border: 1px solid #4e64c0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #6381f8;
+  }
+
+.w3-btn,.w3-button{display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
+.w3-btn.w3-disabled:hover,.w3-btn:disabled:hover{box-shadow:none}
+.w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}

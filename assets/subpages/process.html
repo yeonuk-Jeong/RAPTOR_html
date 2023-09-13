@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	
+	<!-- Copyright (c) 2011-2018 Twitter, Inc.
+Copyright (c) 2011-2018 The Bootstrap Authors -->
+<!-- Copyright (c) 2023 Oncocross, Ltd. -->
+	<title>RAPTOR AI Report</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha284-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<link href="../css/sidebars.css" rel="stylesheet">
+	<link href="../css/dashboard.css" rel="stylesheet">
+	<link href="../css/font.css" rel="stylesheet">
+
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body style="background-color: #ffffff;"> 
+
+	
+
+    <div class="container-fluid" >
+		<div class="row">
+			<!-- sidebar -->
+			<nav id="sidebarMenu" class="sidebar col-md-4 col-3 d-md-block bg-light ">
+				
+			
+				<main class="d-flex flex-nowrap">
+					<div class="flex-shrink-0 p-3">			
+						<a href="../../report.html"><img class="pl-1 ml-1" src="../images/Logo.png" width="195px"></a>
+			
+						<ul class="list-unstyled ps-0">
+							<li class="mb-1 mt-4">
+								<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+									data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+									RAPTOR AI Workflow
+								</button>
+								<div class="collapse show" id="home-collapse">
+									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+										<li><a href="process.html" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">RAPTOR
+												AI Process</a>
+										</li>
+										<li><a href="#" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Data
+												Analyesis Workflow</a>
+										</li>
+										<li><a href="#"
+												class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Drug-Disease
+												Comparison</a>
+										</li>
+										<li><a href="#"
+												class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Cell-Tissue
+												Similarity Analysis</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="mb-1">
+								<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+									data-bs-toggle="collapse" data-bs-target="#data-collapse" aria-expanded="false">
+									Raw Data Information
+								</button>
+								<div class="collapse" id="data-collapse">
+									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+
+										<li><a href="RawDataStat.html" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Raw Data Statistics</a>
+										</li>
+										<li><a href="TotalBases.html" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Total Bases</a>
+										</li>
+										<li><a href="GCATContent.html" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">GC/AT Content</a>
+										</li>
+										<li><a href="Q20Q30.html" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Q20/Q30 (%)</a>
+										</li>
+										<li><a href="QualityByCycle.html" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Quality by Cycle</a>
+										</li>
+									
+									
+									</ul>
+								</div>
+							</li>
+							<li class="mb-1">
+								<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+									data-bs-toggle="collapse" data-bs-target="#results-collapse" aria-expanded="false">
+									Screening Result
+								</button>
+								<div class="collapse" id="results-collapse">
+									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+										<li><a href="#" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Onco 3D
+											Score</a>
+										</li>
+										<li><a href="#" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Top 100
+												Drugs</a>
+										</li>
+										<li><a href="PathwayHT.html" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">Pathway
+												Heatmap</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="border-top my-3"></li>
+							<li class="mb-1">
+								<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+									data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+									Account
+								</button>
+								<div class="collapse" id="account-collapse">
+									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+										<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a>
+										</li>
+										<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a>
+										</li>
+										<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a>
+										</li>
+										<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign
+												out</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</main>
+			
+				
+			</nav>
+		</div>
+	</div>
+
+
+
+
+	<!-- main page -->
+	<div class="float-right" style="width: 1150px; margin-left: 320px;" >
+		<!-- "width: 1460px; padding-left: 310px; padding-top: 6px; background-color: #f6f9fd;" -->
+
+		<div style="width: 1150px; height:600px; padding:0px;">
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-lg-12">
+					<span class="_title2">RAPTOR AI Process</span>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-lg-12">
+					<p class="description_type1">
+						RAPTOR AI는 전사체 데이터를 AI 기술을 활용하여 분석하며, 약물과 질병 간의 상관관계를 예측하는 최적화된 약물-질병 조합을 찾는 플랫폼입니다.<br>
+						이를 통해, RAPTOR AI는 보유한 데이터베이스의 질병 전사체 데이터에서 주어진 약물에 가장 적합한 질병을 식별할 수 있습니다(Disease screening). <br>
+						또한, 데이터베이스의 약물 전사체 데이터를 통해 주어진 질병에 가장 적합한 약물을 찾는 것도 가능합니다.(Drug screening) <br>
+						이를 더 확장하여, 주어진 질병 및 약물과 결합할 때 더욱 탁월한 효과를 나타내는 복합약물(Combinatorial drug)을 탐색할 수도 있습니다.
+					</p>
+				</div>
+				<img src="../images/Raptor_scheme.svg" style="width: 1150px; margin-top: 25px;">
+			</div>
+		</div>
+
+
+		<div class="row" style="margin-top: 50px;  ">
+			<div class="col-lg-12">
+				<span class="sub_title1">Overview</span>
+				
+			</div>
+		</div>
+
+		<div style="margin-top: 28px;  width: 1150px; height:80px; padding:0px; background-color: #ffffff;">
+			<div id="menu_div" style="width: 1150px; height:80px; background-color: rgba(255,255,255, 0.7);">
+				<div>
+					<div class="row" style="background-image: url('../images/bg_line.png');">
+
+						<div class="col-3 text-center">
+							<button id="workflow_btn_1" class="w3-btn w3-round-xxlarge workflow_btn" style="margin-top: 20px;">
+							DEG selection
+							</button>
+						</div>
+
+						<div class="col-3 text-center">
+							<button id="workflow_btn_2" class="w3-btn w3-round-xxlarge workflow_btn"  style="margin-top: 20px;">
+							Cell-tissue modeling
+							</button>
+						</div>
+						<div class="col-3 text-center">
+							<button id="workflow_btn_3" class="w3-btn w3-round-xxlarge workflow_btn" style="margin-top: 20px;">
+							Drug-disease comparison
+							</button>
+						</div>
+						<div class="col-3 text-center">
+							<button id="workflow_btn_4" class="w3-btn w3-round-xxlarge workflow_btn"  style="margin-top: 20px;">
+							Score ensemble
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<div id="content_1_div" class="container" style="width: 1150px; height: 2300px; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; margin-top: 50px; padding-top: 97px;">
+			<div>
+				<span id="scrollspyHeading1" class="sub_title2">Preprocessing & DEG selection</span>
+			</div>
+			<div style="margin-top: 50px;">
+				<div class="text-left" style="width: 1000px;">
+					<div>
+						<span style="font-size: 20px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.15; letter-spacing: normal; text-align: left; color: #212121;">Rawdata Preparation</span>
+						<p style="font-size: 16px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.63; letter-spacing: normal; color: #616161;">
+							약물이나 질병이 회사 내부 데이터베이스 또는 아카이브(Archive)에 없는 경우에는, 먼저 유전자 발현량 데이터를 생성하게 됩니다. <br> 
+							이미 데이터베이스에 전사체 데이터가 보관되어 있는 약물이나 질병의 경우에는 바로 “약물-질병 비교분석” 프로세스로 바로 진행하게 됩니다. <br> 
+							약물의 경우 적정 농도 책정 실험(MTT assay)을 통해 세포실험에 필요한 약물 농도를 측정한 후 여러 세포주 샘플에 약물을 처치하고 RNA-Seq 분석을 진행하며, <br> 
+							질병의 경우 공동연구를 진행하는 병원으로부터 질병에 걸린 환자와 통제군에 속한 사람의 조직 또는 혈액 샘플을 받아 RNA-Seq을 실시합니다.<br> 
+							<br> 
+							이후 각각의 샘플들을 비교분석하기 위하여 전처리(Preprocessing)를 실시합니다. 이 과정에서는 다양한 마이크로어레이, RNA 플랫폼의 표준화, 실험에서 생성된 발현 데이터의 필터링, 정규화 등의 작업이 수행됩니다.<br> 
+							이 과정에서 필요한 경우 세포 변환(Cell converting) 과정을 거치기도 합니다. 이는 약물 처리 실험을 수행한 세포주의 전사체 데이터를 이용해 약물 처리 실험을 수행하지 않은 세포주의 전사체 데이터를 추정하는 방법론입니다.<br> 
+							이를 통해 약물 처리 실험에 대한 비용을 최소화하고, 정확도를 향상할 수 있습니다.<br> 
+						</p>
+					</div>
+				</div>
+
+				<img src="../images/raptor_workflow.png" style="margin-top: 6.6px; width: 960px;">
+				
+
+				<div class="text-right" style="margin-top: 67.7px;">
+		
+					<div style="position: relative; top: 19px; ">
+						<span style="font-size: 20px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.15; letter-spacing: normal; text-align: left; color: #212121;">Ligate Adapters</span>
+						<p style="font-size: 16px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.63; letter-spacing: normal; color: #616161;">
+							The sequencing library is prepared by random fragmentation of the DNA or cDNA sample,<br>
+							followed by 5' and 3' adapter ligation. Alternatively, "tagmentation" combines the fragmentation<br> 
+							and ligation reactions into a single step which greatly increases the efficiency of the library<br>
+							preparation process.
+						</p>
+					</div>
+
+					<iframe width="900" height="700" src="../html/DEG_selction.html"></iframe>
+					
+					
+					<div style="position: relative; top: 42.2px; ">
+						<span style="font-size: 20px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.15; letter-spacing: normal; text-align: left; color: #212121;">Final library Construction</span>
+						<p style="font-size: 16px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.63; letter-spacing: normal; color: #616161;">
+							Adapter-ligated fragments are then PCR amplified with a PCR primer solution which anneals<br>
+							to the ends of each adapters.<br>
+							The library templates undergo quality control and quantification process. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="content_2_div" class="container" style="width: 1150px; height: 1237px; background-color: #eaf3ff; border-bottom: 1px solid #e0e0e0;">
+			<div style="padding-left: 107px; padding-top: 97px;">
+				<div>
+					<span class="sub_title2">Cell-tissue modeling</span>
+				</div>
+				<div style="width: 1072px; height: 1086.5px;">
+					
+					<span style="font-size: 20px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.15; letter-spacing: normal; text-align: left; color: #212121;">Cluster generation using bridge amplification</span>
+					<p style="font-size: 16px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.63; letter-spacing: normal; color: #616161;">
+						The library is loaded onto a flow cell where fragments are captured on<br> 
+						a lawn of surface-bound oligos complementary to the library adapters.<br>
+						Each fragment is then amplified into distinct clonal clusters through bridge<br> 
+						amplification. Once cluster generation is complete, the templates are ready<br>
+						for sequencing.
+					</p>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="content_3_div" class="container" style="width: 1150px; height: 1750px; border-bottom: 1px solid #e0e0e0;">
+			<div style="padding-left: 107px; padding-top: 97px;">
+				<div>
+					<span class="sub_title2">Drug-disease comparison</span>
+				</div>
+				<div style="margin-top: 50px; margin-left: 23px;">
+					<span style="font-size: 20px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.15; letter-spacing: normal; text-align: left; color: #212121;">Sequencing by synthesis (SBS) technology</span>
+					<p style="font-size: 16px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.63; letter-spacing: normal; color: #616161;">
+						Illumina SBS technology utilizes a proprietary reversible terminator-based method that detects single bases as they are incorporated<br>
+						into DNA template strands. As all 4-reversible, terminator-bound dNTPs are present during each sequencing cycle, natural competition<br>
+						minimizes incorporation bias and greatly reduces raw error rates compared to other technologies.<br>
+						The result is highly accurate base-by-base sequencing that virtually eliminates sequence-context-specific errors, even within repetitive<br> 
+						sequence regions and homopolymers.
+					</p>
+				</div>
+				<div style="margin-top: 40px; width: 1024px;">
+					
+					
+					<div style="margin-top: 50px;">
+						<span style="font-size: 20px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.15; letter-spacing: normal; text-align: left; color: #212121;">Four, Two, and One-Channel Chemistry</span>
+						<p style="font-size: 16px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.63; letter-spacing: normal; color: #616161;">
+							Systems using four-channel chemistry uses a mixture of nucleotides labeled with four different fluorescent dyes.<br>
+							Similarly, two-channel chemistry makes use of two different fluorescent dyes, and one-channel chemistry uses only one dye.<br> 
+							The images are processed by an image analysis software to determine nucleotide identity.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<div id="content_4_div" class="container" style="width: 1150px; height: 1021px; background-color: #eaf3ff; border-bottom: 1px solid #e0e0e0;">
+			<div style="position: relative; top: 100px; left: 106px;">
+				<span class="sub_title2">Score ensemble</span>
+			</div>
+			<div style="margin-top: 100px; margin-left: 23px;">
+				<span style="font-size: 20px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.15; letter-spacing: normal; color: #212121;">Generation of Raw data</span>
+				<p style="font-size: 16px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.44; letter-spacing: normal; color: #616161;">
+					The Illumina sequencer generates raw images utilizing sequencing control software for system control and base calling, through integrated<br>
+					primary analysis software called RTA (Real Time Analysis).<br>
+					The BCL/cBCL (base call) binary files are converted into FASTQ files using bcl2fastq, which is an Illumina provided package.<br> 
+					Adapters are not trimmed away from the reads.
+				</p>
+			</div>
+		</div>
+	
+		
+	</div>
+		
+	
+
+
+
+
+
+	<!-- --------------------------------End-------------------------------- -->
+
+	<!-- Content -->
+
+	<!-- --------------------------------End-------------------------------- -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+		integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+		integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+		crossorigin="anonymous"></script>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/public.js"></script>	
+	<script src="../js/process.js"></script>
+
+
+
+</body>
+
+</html>

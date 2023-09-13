@@ -1,0 +1,137 @@
+
+._title1 {
+	font-size: 35px;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: -1.15px;
+	color: #020202;
+}
+
+._title2 {
+	font-size: 35px;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: -1.15px;
+	color: #223a9d;
+}
+
+.description_type1 {
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #738dc7;
+}
+
+
+
+.sub_title1 {
+	font-size: 24px;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: #223a9d;
+}
+.sub_title2 {
+	font-size: 46px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal; 
+    line-height: 0.65; 
+    letter-spacing: -1.15px; 
+    color: #4e64c0;
+}
+.content_sub_title2 {
+	font-size: 16px;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.88;
+	letter-spacing: normal;
+	color: #223a9d;
+}
+
+.content_sub_title2_desc_type1{
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  color: #738dc7;
+}
+.content_sub_title2_info_txt {
+	font-size: 14px;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.14;
+	letter-spacing: normal;
+	color: #212121;
+  }
+
+
+
+/* Qualuty by cycle */
+.content_sub_title3 {
+	font-size: 20px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #4e64c0;
+}
+
+.r1ImgBox {
+	height: 290px;
+	margin-bottom: 10px;
+}
+.r1ImgBox .w3-row .w3-col.l2 {
+	margin-top: 35px; padding-left: 25px;
+}
+.r1ImgBox .w3-row .w3-col.l2 > span:first-child {
+	font-size: 14px; color: #424242;
+}
+.r1ImgBox .w3-row .w3-col.l2 > span:last-child {
+	font-size: 26px;
+	color: #4e64c0;
+}
+.r1ImgBox .w3-row .w3-col.l10 {
+	margin-top: 35px;
+}
+
+.r2ImgBox {
+	height: 290px;
+	margin-bottom: 10px;
+}
+.r2ImgBox .w3-row .w3-col.l2 {
+	margin-top: 35px; padding-left: 25px;
+}
+.r2ImgBox .w3-row .w3-col.l2 > span:first-child {
+	font-size: 14px; color: #424242;
+}
+.r2ImgBox .w3-row .w3-col.l2 > span:last-child {
+	font-size: 26px; color: #008e8c;
+}
+.r2ImgBox .w3-row .w3-col.l10 {
+	margin-top: 35px;
+}
+
+.littleImgBox {
+	margin-bottom: 50px;
+}
+.littleImgBox .w3-col.l3 > span:first-child {
+	font-size: 16px; color: #424242;
+}
+.littleImgBox .w3-col.l3 .w3-card-4.w3-white.w3-margin-top.w3-round-large {
+	width: 240px;
+	height: 124px;
+	padding: 20px 5px 10px 20px;
+	font-size: 14px;
+}
