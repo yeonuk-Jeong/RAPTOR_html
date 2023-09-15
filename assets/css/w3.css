@@ -38,11 +38,11 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 /* } */
 
 html::-webkit-scrollbar {
-	width: 8px;
-	height: 16px;
+	width: 11px;
+	height: 12px;
 }
 html::-webkit-scrollbar-thumb {
-	background-color: #7F90D6;
+	background-color: #5D6DBE;
 	border-radius: 10px;
 	background-clip: padding-box;
 	border: 2px solid transparent;

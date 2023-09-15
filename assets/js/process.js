@@ -1,4 +1,4 @@
-var morethanval = 50;
+var morethanval = 40;
 
 (function () {
   'use strict'

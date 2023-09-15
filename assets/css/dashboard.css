@@ -2,7 +2,7 @@
   .workflow_btn {
     width: 270px;
     height: 60px;
-    border: 1px solid #4e64c0;
+    border: 1px solid #0F2F77;
     font-size: 18px;
     color: #000000;
     font-weight: bold;
@@ -10,27 +10,36 @@
     outline: 0;
 
   }
+ .asd{
+  color: #0F2F77
+  #7E8BA7
+  #88A6E6
+ #5D6DBE
 
-  .workflow_btn:hover, 
-  .workflow_btn:focus{
+
+
+ } 
+  
+  .workflow_btn:hover{
     width: 270px;
     height: 60px;
-    border: 1px solid #4e64c0;
+    border: 1px solid #0F2F77;
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
-    background-color: #6381f8;
+    background-color: #5D6DBE;
   }
 
 
   .workflow_btn_scroll {
     width: 270px;
     height: 60px;
-    border: 1px solid #4e64c0;
+    border: 1px solid #0F2F77;
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
-    background-color: #6381f8;
+    background-color: #5D6DBE;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
 .w3-btn,.w3-button{display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;text-align:center;cursor:pointer;white-space:nowrap}
