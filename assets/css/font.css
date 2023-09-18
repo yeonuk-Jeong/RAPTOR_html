@@ -1,3 +1,7 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+	font-family: 'Spoqa Han Sans Neo', sans-serif;
+  }
 
 ._title1 {
 	font-size: 35px;
@@ -24,9 +28,19 @@
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: 1.5;
+	line-height: 1.63;
 	letter-spacing: normal;
 	color: #738dc7;
+}
+
+.description_type2 {
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.63;
+	letter-spacing: normal;
+	color: #616161;
 }
 
 
