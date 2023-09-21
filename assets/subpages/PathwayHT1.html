@@ -22,13 +22,65 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
 <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 
 <link href="../css/w3.css" rel="stylesheet">
-<link href="../css/heatmaptable.css" rel="stylesheet">
+
 <link href="../css/jquery.magnify.css" rel="stylesheet">
 
 
 
 <script src="../js/domdata.js"></script>
 <script src="../js/public.js"></script>	
+
+
+<style>
+	/* 표의 각 셀에 적용할 스타일 */
+	table {
+   
+
+border-collapse: collapse;
+overflow: hidden;
+
+}
+
+td,th {
+
+padding: 3px;
+position: relative;
+
+/* border: 1px solid #ffffff; */
+ 
+
+}
+td{
+font-size: 9px;
+}
+
+th {
+background-color: #e5ecf5;
+color: #4e64c0;
+font-size: 10px;
+
+
+}
+
+
+
+.hover {
+
+border: 1px solid #f80000!important;
+
+}
+
+
+
+
+
+
+	.tab_border {
+		font-weight: bold;
+		box-shadow: 3px 3px 10px 0px rgba(36, 65, 93, 0.3);
+	}
+</style>
+
 
 </head>
 <body style="background-color: #ffffff;"> 
@@ -174,12 +226,12 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
 	
 					
 					
-    <div id="pathway" class="tab_item" style="width: 1000px; text-align: center;">
-        <table id="tablestyle1" class="hover row-border" style="width:1000px;">
+    <div id="pathway" class="tab_item" style="width: 960px; text-align: center;">
+        <table id="heatmap" class="tab_border" style="width:500px;">
             <thead id="text-container" >
                 
     <tr style="text-align: center; ">
-        <th><a href="../download/heatmap_cropped.pdf" download=""><button class="w3-btn w3-round-xxlarge" style="background-color: #ffffff; border-color:#ff3030; font-size: 13px;"> Download</button> </a></th>
+        <th><a href="../html/heatmap_cropped.pdf" download=""><button class="w3-btn w3-round-xxlarge" style="background-color: #ffffff; font-size: 11px;"> Download</button> </button></a></th>
         <th>Signaling by Nuclear Receptors</th>
         <th>Signaling by NTRKs</th>
         <th>Cellular responses to stimuli</th>
@@ -1360,7 +1412,7 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
 
     <script>
         // 각 셀의 값을 기준으로 색상을 설정하는 JavaScript 코드
-        var table = document.getElementById("tablestyle1");
+        var table = document.getElementById("heatmap");
         var cells = table.getElementsByTagName("td");
 
         for (var i = 0; i < cells.length; i++) {
@@ -1371,7 +1423,7 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
     </script>
 
 
-    <!-- <script>
+    <script>
             $(document).ready(function(){
             $('td').hover(function() {
                 var i = parseInt($(this).index()) + 1;
@@ -1386,7 +1438,7 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
                 $(this).parent().removeClass('hover');
             });
             });
-    </script> -->
+    </script>
 
 
 					
@@ -1425,13 +1477,12 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
 	<script src="../js/jquery.js"></script>
 
 	<script src="../js/jquery.min.js"></script>
+    
 
 	<script src="../js/jquery.magnify.min.js"></script>
 
-	<script src="../js/datatables.min.js"></script>
-  
-  
-	<script src="../js/aRrawDataStatistics.js"></script>
+
+	<script src="../js/pathwayHT.js"></script>
 
 
 

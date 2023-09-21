@@ -21,59 +21,16 @@
 
 
 
-	$("#example_jqdt").DataTable({
-		"info":false,"ordering": false,"searching": false,"lengthChange": true,
+	$("#tablestyle1").DataTable({
+		"info":false,"ordering": false,"searching": true,"lengthChange": true,
 		"lengthMenu": [[10, 30, 50, -1], [10, 30, 50, "All"]],
 		"language": {
 		    "paginate": {
-		      "previous": "<img src='../images/icon_dt_previous.png'>",
-		      "next": "<img src='../images/icon_dt_next.png'>"
+		      "previous": "&#xE000;",
+		      "next": "&#xE001;"
 		    }
 		}
 	});
-	
-	if(isMultipleDataset){
-
-		switch(multipleDatasetType){
-			case "RD_TRD":{
-				$("#trimmed_example_jqdt").DataTable({
-					"info":false,"ordering": false,"searching": false,"lengthChange": true,
-					"lengthMenu": [[10, 30, 50, -1], [10, 30, 50, "All"]],
-					"language": {
-					    "paginate": { "previous": "<img src='../images/icon_dt_previous.png'>", "next": "<img src='../images/icon_dt_next.png'>" }
-					}
-				});
-			};break;
-			case "RD_UMI":{
-				$("#umi_example_jqdt").DataTable({
-					"info":false,"ordering": false,"searching": false,"lengthChange": true,
-					"lengthMenu": [[10, 30, 50, -1], [10, 30, 50, "All"]],
-					"language": {
-					    "paginate": { "previous": "<img src='../images/icon_dt_previous.png'>", "next": "<img src='../images/icon_dt_next.png'>" }
-					}
-				});
-			};break;
-			case "RD_TRD_UMI":{
-				$("#trimmed_example_jqdt").DataTable({
-					"info":false,"ordering": false,"searching": false,"lengthChange": true,
-					"lengthMenu": [[10, 30, 50, -1], [10, 30, 50, "All"]],
-					"language": {
-					    "paginate": { "previous": "<img src='../images/icon_dt_previous.png'>", "next": "<img src='../images/icon_dt_next.png'>" }
-					}
-				});
-				$("#umi_example_jqdt").DataTable({
-					"info":false,"ordering": false,"searching": false,"lengthChange": true,
-					"lengthMenu": [[10, 30, 50, -1], [10, 30, 50, "All"]],
-					"language": {
-					    "paginate": { "previous": "<img src='../images/icon_dt_previous.png'>", "next": "<img src='../images/icon_dt_next.png'>" }
-					}
-				});
-			};break;
-		}
-
-	}
-	
-	
 	
 	
 

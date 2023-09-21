@@ -1,7 +1,7 @@
 /*
  * Table styles
  */
-table.dataTable {
+ table.dataTable {
   width: 100%;
   margin: 0 auto;
   clear: both;
@@ -298,8 +298,8 @@ table.dataTable td {
   padding: 4px;
 }
 .dataTables_wrapper .dataTables_filter {
-  float: right;
-  text-align: right;
+  float: left;
+  text-align: left;
 }
 .dataTables_wrapper .dataTables_filter input {
   border: 1px solid #aaa;
