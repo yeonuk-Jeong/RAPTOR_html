@@ -27,7 +27,20 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
 
 
 <body style="background-color: #ffffff;"> 
-
+	<script>
+		$(document).ready(function() {
+   $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+         event.preventDefault();
+         $('html, body').stop().animate({
+            scrollTop: target.offset().top
+         }, 100);
+      }
+   });
+});
+	
+	</script>
 	
 
     <div class="container-fluid" >
@@ -51,14 +64,14 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
 										<li><a href="process.html" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">RAPTOR
 												AI Process</a>
 										</li>
-										<li><a href="process.html#content_2_div" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">
+										<li><a href="#content_2_div" class="fw-bold link-dark d-inline-flex text-decoration-none rounded">
 											Cell-Tissue Modeling</a>
 										</li>
-										<li><a href="process.html#content_3_div"
+										<li><a href="#content_3_div"
 												class="fw-bold link-dark d-inline-flex text-decoration-none rounded">
 												Drug-Disease Comparison</a>
 										</li>
-										<li><a href="process.html#content_4_div"
+										<li><a href="#content_4_div"
 												class="fw-bold link-dark d-inline-flex text-decoration-none rounded">
 												Score Ensemble</a>
 										</li>
