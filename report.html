@@ -146,185 +146,328 @@ Copyright (c) 2011-2018 The Bootstrap Authors -->
 			</nav>
 		</div>
 
-		<div class="col-md-8 ms-sm-auto col-lg-9 px-md-4"  style="margin-top: 18px;">
+		<div class="float-right" style="width: 1150; margin-left: 320px;" ><!-- --------------------------------Start-------------------------------- -->
+
 			<div
-				class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom" >
-				<h1 class="_title2">Single Drug Screening Report</h1>
+				class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom" style="margin-top: 70px; margin-bottom: 40px;">
+				<!-- <h1 class="_title2"> -->
+			<!-- <div class="w3-row" style="margin-top: 70px; margin-bottom: 40px;"> -->
+				
+					<h1 class="_title2">Indication Screening Report</h1>
 		
-				<div class="btn-toolbar mb-2 mb-md-0">
-					<div class="btn-group me-2">
-						<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-						<a href="assets/download/OJP4301.pptx" download=""><button type="button" class="btn btn-sm btn-outline-secondary">Download</button></a>
+					<div class="btn-toolbar mb-2 mb-md-0">
+						<div class="btn-group me-2">
+							<button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+							<a href="assets/download/OJP4301 indication screening_20220722_fin.pdf" download=""><button type="button" class="btn btn-sm btn-outline-secondary">Download</button></a>
+						</div>
 					</div>
-				</div>
+				
 			</div>
 		
 			<!-- main image -->
-			<img class="my-4 w-100 h-100" src="./assets/images/wordcloud.png">
+			<img class="w-100" src="./assets/images/wordcloud.png">
 			<!-- <iframe class="my-4 w-100" src="assets/html/bubble_chart.html" width="900" height="380">></iframe> -->
 		
 		
 			<h2>Top Ranked Drugs</h2>
 			<div class="table-responsive">
+				
+		
 				<table class="table table-striped table-sm">
-					<thead>
-						<tr>
-							<th scope="col">Rank</th>
-							<th scope="col">Name</th>
-							<th scope="col">Description</th>
-							<th scope="col">SMILES</th>
-						</tr>
-					</thead>
-		
-					<tbody>
-						<tr>
+					
+						<thead>
+						  <tr style="text-align: left;">
+							<th>Rank</th>
+							<th>Cohort number</th>
+							<th>Disease name</th>
+							<th>Sample origin</th>
+							<th>Disease description</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
 							<td>1</td>
-							<td>BRD-K28995283</td>
-							<td>N-(2-aminophenyl)-4-[[[(3R,9R,10S)-16-[[(4-fluoroanilino)-oxomethyl]amino]-12-[(2R)-1-hydroxypropan-2-yl]-3,10-dimethyl-13-oxo-2,8-dioxa-12-azabicyclo[12.4.0]octadeca-1(14),15,17-trien-9-yl]methyl-methylamino]methyl]benzamide
-								is a member of benzamides.</td>
-							<td>C[C@H](CO)N1C[C@H](C)[C@H](CN(C)Cc2ccc(cc2)C(=O)Nc3ccccc3N)OCCCC[C@@H](C)Oc4ccc(NC(=O)Nc5ccc(F)cc5)cc4C1=O
-							</td>
-						</tr>
-						<tr>
+							<td>DravetSyndrome_v1</td>
+							<td>Dravet syndrome</td>
+							<td>blood</td>
+							<td>An early infantile epileptic encephalopathy that has_material_basis_in heterozygous mutation in the SCN1A gene on chromosome 2q24.</td>
+						  </tr>
+						  <tr>
 							<td>2</td>
-							<td>Glimepiride</td>
-							<td>Glimepiride, is a medication used to treat diabetes mellitus type 2. It is less preferred than
-								metformin. Use is
-								recommended together with diet and exercise. It is taken by mouth. Glimepiride takes up to three
-								hours for
-								maximum effect and lasts for about a day.</td>
-							<td>O=C3C(/CC)=C(/C)CN3C(=O)NCCc1ccc(cc1)S(=O)(=O)NC(=O)N[C@H]2CC[C@H](C)CC2</td>
-						</tr>
-						<tr>
+							<td>GTEx_2030s_vs_6070s</td>
+							<td>Aging</td>
+							<td>brain_cerebellar_hemisphere</td>
+							<td>Aging, Biological aging, Scenescence (MeSH Unique ID D000375, Tree Number(s) G07.345.124)</td>
+						  </tr>
+						  <tr>
 							<td>3</td>
-							<td>CRT0419870</td>
-							<td>Cancer Research UK drug</td>
-							<td>NaN</td>
-						</tr>
-						<tr>
+							<td>GSE44874</td>
+							<td>isolated elevated serum creatine phosphokinase levels</td>
+							<td>myotube</td>
+							<td>An inherited metabolic disorder characterized by elevated serum creatine kinase levels in the absence of muscle weakness or other symptoms that has_material_basis_in in some cases in heterozygous mutation in CAV3 on chromosome 3p25.3.</td>
+						  </tr>
+						  <tr>
 							<td>4</td>
-							<td>BRD-K84245233</td>
-							<td>2-[(2R,4aR,12aR)-5-methyl-6-oxo-8-[(1-oxo-2-thiophen-2-ylethyl)amino]-2,3,4,4a,12,12a-hexahydropyrano[2,3-c][1,5]benzoxazocin-2-yl]-N-[(4-phenylphenyl)methyl]acetamide
-								is a member of biphenyls.</td>
-							<td>CN1[C@@H]2CC[C@H](CC(=O)NCc3ccc(cc3)-c3ccccc3)O[C@H]2COc2ccc(NC(=O)Cc3cccs3)cc2C1=O</td>
-						</tr>
-						<tr>
+							<td>GSE67472</td>
+							<td>asthma</td>
+							<td>airway_epithelium</td>
+							<td>A bronchial disease that is characterized by chronic inflammation and narrowing of the airways, which is caused by a combination of environmental and genetic factors. The disease has_symptom recurring periods of wheezing (a whistling sound while breathing), has_symptom chest tightness, has_symptom shortness of breath, has_symptom mucus production and has_symptom coughing. The symptoms appear due to a variety of triggers such as allergens, irritants, respiratory infections, weather changes, exercise, stress, reflux disease, medications, foods and emotional anxiety.</td>
+						  </tr>
+						  <tr>
 							<td>5</td>
-							<td>BRD-K08447949</td>
-							<td>3-[3-(4-butylphenyl)-1,2,4-oxadiazol-5-yl]-N-ethylpropanamide is an oxadiazole and a ring
-								assembly.</td>
-							<td>CCCCc1ccc(cc1)-c1noc(CCC(=O)NCC)n1</td>
-						</tr>
-						<tr>
+							<td>GSE108113</td>
+							<td>membranous glomerulonephritis</td>
+							<td>kidney_tubulointerstitium</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
 							<td>6</td>
-							<td>BRD-K08640787</td>
-							<td>3-phenyl-6-[4-[3-(trifluoromethyl)phenyl]-1-piperazinyl]-1H-pyrimidine-2,4-dione is a member of
-								piperazines.
-							</td>
-							<td>FC(F)(F)c1cccc(c1)N1CCN(CC1)c1cc(=O)n(-c2ccccc2)c(=O)[nH]1</td>
-						</tr>
-						<tr>
+							<td>GSE108113</td>
+							<td>membranous glomerulonephritis</td>
+							<td>kidney_glomeruli</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
 							<td>7</td>
-							<td>BRD-K75999307</td>
-							<td>5-(3-fluorophenyl)-4-[(1-methyl-5-tetrazolyl)thio]thieno[2,3-d]pyrimidine is an aryl sulfide and
-								a
-								thienopyrimidine.</td>
-							<td>Cn1nnnc1Sc2ncnc3scc(c4cccc(F)c4)c23</td>
-						</tr>
-						<tr>
+							<td>GSE108113</td>
+							<td>lipoid nephrosis</td>
+							<td>kidney_tubulointerstitium</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
 							<td>8</td>
-							<td>nystatin</td>
-							<td>antifungal medication. It is used to treat Candida infections of the skin including diaper rash,
-								thrush,
-								esophageal candidiasis, and vaginal yeast infections</td>
-							<td>NaN</td>
-						</tr>
-						<tr>
+							<td>GSE108113</td>
+							<td>vasculitis</td>
+							<td>kidney_tubulointerstitium</td>
+							<td>A vascular disease that is characterized by inflammation of the blood vessels.</td>
+						  </tr>
+						  <tr>
 							<td>9</td>
-							<td>KU-C104126N</td>
-							<td>6-nitro-2-phenyl-1,2-benzothiazol-3-one is a member of benzothiazoles.</td>
-							<td>[O-][N+](=O)c1ccc2c(c1)sn(-c1ccccc1)c2=O</td>
-						</tr>
-						<tr>
+							<td>GSE108113</td>
+							<td>vasculitis</td>
+							<td>kidney_glomeruli</td>
+							<td>A vascular disease that is characterized by inflammation of the blood vessels.</td>
+						  </tr>
+						  <tr>
 							<td>10</td>
-							<td>D-64131</td>
-							<td>(5-methoxy-1H-indol-2-yl)-phenylmethanone is a N-acylindole.</td>
-							<td>COc1ccc2[nH]c(cc2c1)C(=O)c1ccccc1</td>
-						</tr>
-						<tr>
+							<td>GSE108113</td>
+							<td>focal segmental glomerulosclerosis</td>
+							<td>kidney_glomeruli</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
 							<td>11</td>
-							<td>BRD-K89563433</td>
-							<td>5-[(2-bromo-6-chlorophenyl)methyl]-1-tert-butyl-4-pyrazolo[3,4-d]pyrimidinone is a
-								pyrazolopyrimidine.</td>
-							<td>CC(C)(C)n1ncc2c(=O)n(Cc3c(Cl)cccc3Br)cnc12</td>
-						</tr>
-						<tr>
+							<td>GSE108113</td>
+							<td>focal segmental glomerulosclerosis</td>
+							<td>kidney_tubulointerstitium</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
 							<td>12</td>
-							<td>DM-55-3</td>
+							<td>GSE104066</td>
+							<td>focal segmental glomerulosclerosis</td>
+							<td>kidney_glomeruli</td>
 							<td>NaN</td>
-							<td>C[C@H](CO)N1C[C@@H](C)[C@H](CN(C)S(=O)(=O)c2ccc(F)cc2)OCCCC[C@H](C)Oc3ccc(NC(=O)Nc4ccccc4)cc3C1=O
-							</td>
-						</tr>
-						<tr>
+						  </tr>
+						  <tr>
 							<td>13</td>
-							<td>vincristine</td>
-							<td>tubulin inhibitor, microtubule inhibitor, microtubule polymerization inhibitor, tubulin
-								polymerisation
-								inhibitor, vinca alkaloid</td>
-							<td>CCC1(O)CC2CN(C1)CCc3c([nH]c4ccccc34)C(C2)(C(=O)OC)c5cc6c(cc5OC)N(C=O)C7C86CCN9CC=CC(CC)(C98)C(C(=O)OC)C7(O)C(=O)OC
-							</td>
-						</tr>
-						<tr>
+							<td>GSE108113</td>
+							<td>lipoid nephrosis</td>
+							<td>kidney_glomeruli</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
 							<td>14</td>
-							<td>BRD-K66884694</td>
-							<td>5-(4-chlorophenyl)-4-[(1-methyl-5-tetrazolyl)thio]thieno[2,3-d]pyrimidine is an aryl sulfide and
-								a
-								thienopyrimidine.</td>
-							<td>Cn1nnnc1Sc2ncnc3scc(c4ccc(Cl)cc4)c23</td>
-						</tr>
-						<tr>
+							<td>GSE28133</td>
+							<td>retinal detachment</td>
+							<td>retina</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
 							<td>15</td>
-							<td>roxithromycin</td>
-							<td>emi-synthetic macrolide antibiotic</td>
+							<td>GSE25518</td>
+							<td>cryptorchidism</td>
+							<td>testicular</td>
 							<td>NaN</td>
-						</tr>
-						<tr>
+						  </tr>
+						  <tr>
 							<td>16</td>
-							<td>BRD-K32628102</td>
-							<td>2-[(1S,3S,4aS,9aR)-6-[[(2-fluoroanilino)-oxomethyl]amino]-1-(hydroxymethyl)-3,4,4a,9a-tetrahydro-1H-pyrano[3,4-b]benzofuran-3-yl]-N-[(2,5-difluorophenyl)methyl]acetamide
-								is a member of ureas.</td>
-							<td>OC[C@@H]1O[C@H](CC(=O)NCc2cc(F)ccc2F)C[C@@H]3[C@H]1Oc4ccc(NC(=O)Nc5ccccc5F)cc34</td>
-						</tr>
-						<tr>
+							<td>GSE32924</td>
+							<td>atopic dermatitis</td>
+							<td>skin_non_lesion</td>
+							<td>An allergic contact dermatitis that is a chronically relapsing inflammatory allergic response located_in the skin that causes itching and flaking.</td>
+						  </tr>
+						  <tr>
 							<td>17</td>
-							<td>VU-0424206-1</td>
-							<td>2-(3-chloro-4-fluorophenoxy)-N-[(3S)-1-(cyclopropylmethyl)-3-piperidinyl]acetamide is an
-								aromatic ether.</td>
-							<td>Fc1ccc(OCC(=O)N[C@H]2CCCN(CC3CC3)C2)cc1Cl</td>
-						</tr>
-						<tr>
+							<td>GSE71226</td>
+							<td>coronary artery disease</td>
+							<td>peripheral_blood</td>
+							<td>An artery disease that is characterized by plaque building up along the inner walls of the arteries of the heart resulting in a narrowing of the arteries and a reduced blood supply to the cardiac muscles.</td>
+						  </tr>
+						  <tr>
 							<td>18</td>
-							<td>BRD-K55487965</td>
-							<td>5-(2-chlorophenyl)-4-[(1-methyl-5-tetrazolyl)thio]thieno[2,3-d]pyrimidine is an aryl sulfide and
-								a
-								thienopyrimidine.</td>
-							<td>Cn1nnnc1Sc2ncnc3scc(c4ccccc4Cl)c23</td>
-						</tr>
-						<tr>
-							<td>19</td>
-							<td>alprostadil</td>
-							<td>a naturally occurring prostaglandin which is used as a medication.</td>
+							<td>GSE16191</td>
+							<td>cryptorchidism</td>
+							<td>testicular</td>
 							<td>NaN</td>
-						</tr>
-						<tr>
+						  </tr>
+						  <tr>
+							<td>19</td>
+							<td>GSE13760</td>
+							<td>type 2 diabetes mellitus</td>
+							<td>arterial</td>
+							<td>A diabetes mellitus that involves high blood glucose resulting from cells fail to use insulin properly.</td>
+						  </tr>
+						  <tr>
 							<td>20</td>
-							<td>VU-0365114-2</td>
-							<td>chemical compound</td>
-							<td>FC(F)(F)Oc1ccc2N(Cc3ccc(cc3)-c3ccccc3)C(=O)C(=O)c2c1</td>
-						</tr>
-					</tbody>
-		
-		
+							<td>GSE37171</td>
+							<td>uremia</td>
+							<td>whole_blood</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
+							<td>21</td>
+							<td>GSE32924</td>
+							<td>atopic dermatitis</td>
+							<td>skin_lesion</td>
+							<td>An allergic contact dermatitis that is a chronically relapsing inflammatory allergic response located_in the skin that causes itching and flaking.</td>
+						  </tr>
+						  <tr>
+							<td>22</td>
+							<td>GSE37265</td>
+							<td>aphthous stomatitis</td>
+							<td>non_ulcer_tissue</td>
+							<td>A stomatitis characterized by the repeated formation of benign and non-contagious mouth ulcers.</td>
+						  </tr>
+						  <tr>
+							<td>23</td>
+							<td>GSE21899</td>
+							<td>Gaucher's disease</td>
+							<td>skin_fibroblasts</td>
+							<td>A sphingolipidosis characterized by deficiency of the enzyme glucocerebrosidase which results in the accumulation of harmful quantities of the glycolipid glucocerebroside throughout the body, especially within the bone marrow, spleen and liver.</td>
+						  </tr>
+						  <tr>
+							<td>24</td>
+							<td>GTEx_2030s_vs_6070s</td>
+							<td>Aging</td>
+							<td>brain_hypothalamus</td>
+							<td>Aging, Biological aging, Scenescence (MeSH Unique ID D000375, Tree Number(s) G07.345.124)</td>
+						  </tr>
+						  <tr>
+							<td>25</td>
+							<td>GSE25724</td>
+							<td>type 2 diabetes mellitus</td>
+							<td>pancreatic_islet</td>
+							<td>A diabetes mellitus that involves high blood glucose resulting from cells fail to use insulin properly.</td>
+						  </tr>
+						  <tr>
+							<td>26</td>
+							<td>GSE25724</td>
+							<td>type 2 diabetes mellitus</td>
+							<td>pancreas</td>
+							<td>A diabetes mellitus that involves high blood glucose resulting from cells fail to use insulin properly.</td>
+						  </tr>
+						  <tr>
+							<td>27</td>
+							<td>GSE21899</td>
+							<td>Gaucher's disease</td>
+							<td>skin_fibroblasts</td>
+							<td>A sphingolipidosis characterized by deficiency of the enzyme glucocerebrosidase which results in the accumulation of harmful quantities of the glycolipid glucocerebroside throughout the body, especially within the bone marrow, spleen and liver.</td>
+						  </tr>
+						  <tr>
+							<td>28</td>
+							<td>GSE77287</td>
+							<td>Calcific Aortic Valve Disease</td>
+							<td>aortic_valve</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
+							<td>29</td>
+							<td>GSE26969</td>
+							<td>intracranial aneurysm</td>
+							<td>arterial</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
+							<td>30</td>
+							<td>GSE21411</td>
+							<td>interstitial lung disease</td>
+							<td>lung</td>
+							<td>A lung disease that is characterized by inflammation and altered lung interstitium compromising pulmonary function and often has_symptom shortness of breath, dyspnea, and/or cough.</td>
+						  </tr>
+						  <tr>
+							<td>31</td>
+							<td>GSE121421</td>
+							<td>drug allergy</td>
+							<td>skin</td>
+							<td>An allergic disease that is triggered by a drug.</td>
+						  </tr>
+						  <tr>
+							<td>32</td>
+							<td>GSE21369</td>
+							<td>interstitial lung disease</td>
+							<td>lung</td>
+							<td>A lung disease that is characterized by inflammation and altered lung interstitium compromising pulmonary function and often has_symptom shortness of breath, dyspnea, and/or cough.</td>
+						  </tr>
+						  <tr>
+							<td>33</td>
+							<td>GSE120721</td>
+							<td>atopic dermatitis</td>
+							<td>skin_epidermis</td>
+							<td>An allergic contact dermatitis that is a chronically relapsing inflammatory allergic response located_in the skin that causes itching and flaking.</td>
+						  </tr>
+						  <tr>
+							<td>34</td>
+							<td>GSE13353</td>
+							<td>intracranial aneurysm</td>
+							<td>artery_wall</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
+							<td>35</td>
+							<td>GSE63067</td>
+							<td>fatty liver disease</td>
+							<td>liver</td>
+							<td>A lipid storage disease characterized by the accumulation of large vacuoles of triglyceride fat in liver cells via the process of steatosis.</td>
+						  </tr>
+						  <tr>
+							<td>36</td>
+							<td>GSE21369</td>
+							<td>nonspecific interstitial pneumonia</td>
+							<td>lung</td>
+							<td>An idiopathic interstitial pneumonia that occurs mainly in women, people who do not smoke, and people younger than 50 years with no known cause or risk factors. Lung biopsies may show predominantly interstitial inflammation or fibrosis or a combination of inflammation and fibrosis. A dry cough and shortness of breath develop over 6 to 18 months. Low-grade fever and a feeling of illness (malaise) may occur.</td>
+						  </tr>
+						  <tr>
+							<td>37</td>
+							<td>GSE10006</td>
+							<td>chronic obstructive pulmonary disease</td>
+							<td>small_airway</td>
+							<td>NaN</td>
+						  </tr>
+						  <tr>
+							<td>38</td>
+							<td>GSE21411</td>
+							<td>nonspecific interstitial pneumonia</td>
+							<td>lung</td>
+							<td>An idiopathic interstitial pneumonia that occurs mainly in women, people who do not smoke, and people younger than 50 years with no known cause or risk factors. Lung biopsies may show predominantly interstitial inflammation or fibrosis or a combination of inflammation and fibrosis. A dry cough and shortness of breath develop over 6 to 18 months. Low-grade fever and a feeling of illness (malaise) may occur.</td>
+						  </tr>
+						  <tr>
+							<td>39</td>
+							<td>GSE20436</td>
+							<td>trachoma</td>
+							<td>tarsal_conjunctiva</td>
+							<td>A commensal bacterial infectious disease that results_in infection located_in eye, has_material_basis_in Chlamydia trachomatis (A, B, Ba and C serovars), which is transmitted_by contact with eye discharge from the infected person and transmitted_by congenital method. The infection causes eyelid to turn inward which makes eyelashes to scratch the cornea.</td>
+						  </tr>
+						  <tr>
+							<td>40</td>
+							<td>GSE24290</td>
+							<td>diabetic neuropathy</td>
+							<td>sural_nerve</td>
+							<td>NaN</td>
+						  </tr>
+						</tbody>
+					  
+					
 		
 		
 		
